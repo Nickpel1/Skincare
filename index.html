@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skin</title>
+    <link rel= "stylesheet" href="style.css"></linkrel>
+</head>
+<body>
+    <header>
+        <div class="logo">BimGlow</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="toggleCart()">🛒<span id ="cart-count"></span></div>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+        <div class="hero-text">
+        <h1>Radiance, Real & Raw</h1>
+        <p>Glow from within with our 100% natural skincare products. our trusted source for authentic skincare brand beauty products in Lagos, Nigeria. Shop top brands with fast nationwide delivery and consultation </p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+        <div class="hero-image">
+            <img src="images/img1.jpeg" alt="image not found">
+        </div>
+        </div>
+    </section>
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="product-list"></div>
+    </section>
+    <section id="about" class="about">
+        <h2>About BimGlow</h2>
+        <p>Passionate about empowering others to glow with confidence, BimGlow curate a line of natural, effective skincare products that nurture your skin and soul.</p>
+    <p>Our Skincare brand offers gentle, effective solutions for a brighter, more radiant you.</p>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name" required/>
+            <input type="email" placeholder="Email" required/>
+            <textarea placeholder="Your message is ........." required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <div class="cart" id="cart">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: #<span id="cart-total">0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+    </div>
+    <footer>
+        <p>&copy;2025 BimGlow. All rights reserved. Adebimpe's design</p>
+    </footer>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>
