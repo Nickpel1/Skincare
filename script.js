@@ -1,3 +1,13 @@
+function toggleMenu(){
+const navLinks= document.querySelector('.nav-links');
+navLinks.classList.toggle('active');
+const closeBtn = document.getElementById('close-btn');
+closeBtn.addEventListener('click', ()=>{
+    menu.classList.add("open");
+});
+const nav = document.getElementById('nav');
+nav.classList.toggle('open');
+}
 
 const products=[
     {
@@ -40,7 +50,6 @@ function renderProducts(){
     `;
  });
 }
-
 function addToCart(productId){
     const item = products.find(p=>p.id===
         productId);
