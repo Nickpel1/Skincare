@@ -178,11 +178,9 @@ header{
     border-radius: 30px;
     cursor: pointer;
     margin-bottom: 30px;
-    width: 200px;
-    right: 30px;
+    left: 10px;
     display: flex;
     justify-content: center;
-    margin-left: 50px;
     
 }
 .cart{
